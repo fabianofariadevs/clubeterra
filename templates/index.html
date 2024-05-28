@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube Terra Sustentabilidade</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+.earth-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.earth {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.info-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Clube Terra Sustentabilidade</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-toggle="modal" data-target="#infoModalsobre">Sobre🌍</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#infoModalparceiro">Parceiros🌍</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#infoModalpreposto">Prepostos🌍Apoio</a></li>
+                <li><a href="/containers">🌍Container/Token🌍</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#infoModalVencidinhos">🌍R$_Vencidinhos</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#infoModalPlanetquest">🌍PlanetQuest🌍</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero">
+                <iframe src="https://giphy.com/embed/41SIOpeqCfIru" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <div class="overlay">
+                    <h2>Seja bem-vindo ao Clube Terra Sustentabilidade</h2>
+                    <h5>Junte-se a nós para um futuro + sustentável</h5>
+                    <p>O planeta "TERRA" agradece</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Clube🌍Terra. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+<!-- INICIO MODAL _SOBRE  -->
+<!-- Modal SOBRE -->
+<div class="modal fade" id="infoModalsobre" tabindex="-1" role="dialog" aria-labelledby="infoModalLabelV" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabels">🌍 SOBRE 🌍Clube Terra🌍</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>
+                O Clube Terra Sustentabilidade é uma iniciativa global que visa promover a conscientização ambiental e práticas sustentáveis em comunidades locais e online.
+                <br><br>
+                Nossa missão é inspirar e engajar empresas, organizações e pessoas de todas as idades a adotar hábitos mais sustentáveis em suas vidas diárias e contribuir para a preservação do meio ambiente e do planeta Terra.
+                <br><br>
+                Através de parcerias com organizações, empresas e indivíduos comprometidos com a sustentabilidade, oferecemos uma variedade de programas, projetos e recursos educacionais para promover ações positivas em prol do meio ambiente.
+                <br><br>
+                Junte-se a nós nessa jornada e faça a diferença para um futuro mais verde e sustentável para todos!
+            </p>
+            <hr>
+                <a href="#" data-toggle="modal" data-target="#infoModalmissao">Missão🌍Valores</a> /
+                <a href="#" data-toggle="modal" data-target="#infoModalvisao">Visão🌍Objetivos</a> /
+                <a href="#" data-toggle="modal" data-target="#infoModalacoes">Ações🌍Projetos</a>
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal MISSÃO_VALORES _SOBRE -->
+<div class="modal fade" id="infoModalmissao" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                🌍MISSÃO🌍:<br><br>
+                Promover a conscientização ambiental e práticas sustentáveis em comunidades locais e online, inspirando e engajando pessoas de todas as idades a adotar hábitos mais sustentáveis em suas vidas diárias e contribuir para a preservação do meio ambiente e do planeta Terra.<br><hr>
+                🌍VALORES🌍:<br><br>
+                Sustentabilidade: Compromisso com a preservação do meio ambiente e a promoção de práticas sustentáveis.<br><br>
+                Educação: Foco na conscientização e no aprendizado sobre questões ambientais e soluções sustentáveis.<br><br>
+                Colaboração: Parcerias com organizações, empresas e indivíduos comprometidos com a sustentabilidade.<br><br>
+                Inovação: Desenvolvimento de programas e projetos inovadores para promover ações positivas em prol do meio ambiente.<br><br>
+                Impacto: Contribuição para um futuro mais verde e sustentável para todos.<br><hr>
+
+                <a href="#" data-toggle="modal" data-target="#infoModalvisao">Visão🌍Objetivos</a> /
+                <a href="#" data-toggle="modal" data-target="#infoModalacoes">Ações🌍Projetos</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal VISÃO_OBJETIVOS _SOBRE -->
+<div class="modal fade" id="infoModalvisao" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                🌍VISÃO🌍:<br><br>
+                Ser uma referência global em educação ambiental e sustentabilidade, promovendo ações positivas em prol do meio ambiente e do planeta Terra.<br><hr>
+                🌍OBJETIVOS🌍:<br><br>
+                Conscientizar e engajar pessoas de todas as idades sobre questões ambientais e práticas sustentáveis.<br><br>
+                Promover parcerias e colaborações com organizações, empresas e indivíduos comprometidos com a sustentabilidade.<br><br>
+                Desenvolver programas e projetos inovadores para promover ações positivas em prol do meio ambiente.<br><br>
+                Contribuir para um futuro mais verde e sustentável para todos.<br><hr>
+
+                <a href="#" data-toggle="modal" data-target="#infoModalacoes">Ações🌍Projetos</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal AÇÕES_PROJETOS _SOBRE -->
+<div class="modal fade" id="infoModalacoes" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                🌍AÇÕES🌍:<br><br>
+                Educação Ambiental: Desenvolvimento de programas educacionais e recursos para conscientização ambiental.<br><br>
+                Reciclagem e Sustentabilidade: Incentivo à reciclagem, reutilização e redução de resíduos.<br><br>
+                Energias Renováveis: Promoção de soluções sustentáveis de energia e redução da dependência de combustíveis fósseis.<br><br>
+                Conservação da Natureza: Proteção da fauna e flora local, restauração de habitats naturais e promoção da biodiversidade.<br><br>
+                Mobilização Comunitária: Engajamento de comunidades locais em ações sustentáveis e projetos de impacto social positivo.<br><hr>
+                🌍PROJETOS🌍:<br><br>
+                Plantio de Árvores: Iniciativas de reflorestamento e arborização urbana para combater o desmatamento e promover a qualidade do ar.<br><br>
+                Limpeza de Praias e Rios: Ações de limpeza e preservação de ecossistemas aquáticos para combater a poluição e proteger a vida marinha.<br><br>
+                Campanhas de Conscientização: Mobilização e sensibilização da população sobre questões ambientais e práticas sustentáveis.<br><br>
+                Projetos de Reciclagem: Incentivo à reciclagem de resíduos sólidos e promoção de práticas sustentáveis de gestão de resíduos.<br><br>
+                Programas de Educação Ambiental: Desenvolvimento de materiais educativos e atividades para escolas e comunidades sobre sustentabilidade.<br><hr>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIM MODAL_SOBRE -->
+
+
+<!-- INICIO MODAL _PARCEIRO  -->
+<!-- Modal PARCEIRO -->
+<div class="modal fade" id="infoModalparceiro" tabindex="-1" role="dialog" aria-labelledby="infoModalLabelV" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabelp">🌍 PARCEIROS 🌍Clube Terra🌍</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <br>
+                    <hr>
+                <a href="#" data-toggle="modal" data-target="#infoModalp">Saiba mais 🌍</a>
+
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIM MODAL_PARCEIRO -->
+
+<!-- INICIO MODAL _PREPOSTO  -->
+<!-- Modal PREPOSTO -->
+<div class="modal fade" id="infoModalpreposto" tabindex="-1" role="dialog" aria-labelledby="infoModalLabelV" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabelpre">🌍 PONTOS/PREPOSTOS 🌍Clube Terra🌍</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <br>
+                    <hr>
+                <a href="#" data-toggle="modal" data-target="#infoModalpre">Saiba mais 🌍</a>
+
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIM MODAL_PREPOSTO -->
+
+<!-- INICIO MODAL _ VENCIDINHOS -->
+<!-- Modal VENCIDINHOS -->
+<div class="modal fade" id="infoModalVencidinhos" tabindex="-1" role="dialog" aria-labelledby="infoModalLabelV" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabelV">🌍Vencidinhos Meu🌍Clube Terra🌍</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            Nome da Campanha: Desconto Sustentável - Clube Terra 🌍<br>
+                    Objetivo:<br>
+                    Reduzir o desperdício de alimentos oferecendo produtos próximos ao vencimento com 50% de desconto para moradores e clientes próximos das lojas e supermercados parceiros do Clube Terra.</p>
+                    <hr>
+                <a href="#" data-toggle="modal" data-target="#infoModaldinamica">🌍 Dinâmica e Regras</a>
+
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal DINÂMICA _ VENCIDINHOS-->
+<div class="modal fade" id="infoModaldinamica" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p> 🌍 Dinâmica da Promoção de Produtos Alimentícios Próximos ao Vencimento<hr>
+                    1. O Clube Terra Sustentabilidade, em parceria com supermercados e lojas locais, oferece produtos alimentícios próximos ao vencimento com 50% de desconto para moradores e clientes próximos das lojas parceiras.<br>
+                <br>2. Os produtos disponíveis para a promoção são selecionados diariamente pelos estabelecimentos parceiros e divulgados no aplicativo do Clube Terra e nas redes sociais.<br>
+                <br>3. Os clientes interessados em adquirir os produtos devem se dirigir às lojas parceiras e apresentar o cupom de desconto gerado pelo aplicativo do Clube Terra.<br>
+                <br>4. A promoção é válida enquanto durarem os estoques dos produtos selecionados e pode ser encerrada a qualquer momento pelos estabelecimentos parceiros.<br>
+                <br>5. A iniciativa visa reduzir o desperdício de alimentos e promover práticas sustentáveis de consumo entre os moradores e clientes locais.</p>
+                    <hr>
+
+                <a href="#" data-toggle="modal" data-target="#infoModalimplementacao">🌍 Implementação</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal DINÂMICA/IMPLEMENTAÇÃO _ VENCIDINHOS -->
+<div class="modal fade" id="infoModalimplementacao" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+            1. Parcerias e Logística<br><hr>
+            1.1) Identificação dos Parceiros:<br>
+            Firmar parcerias com lojas e supermercados locais que fazem parte do Clube🌍Terra.<br><br>
+            1.2) Inventário de Produtos:<br>
+
+            Identificar produtos alimentícios que estão próximos ao vencimento (geralmente 1-2 semanas antes da data de validade).<br><br>
+            1.3) Comunicação com Parceiros:<br>
+
+            Estabelecer um canal de comunicação eficiente para atualizar a lista de produtos em promoção regularmente.
+            <br><br><hr>
+            2. Tecnologia e Sistema<br><hr>
+            2.1) Plataforma Digital:<br>
+
+            Desenvolver ou utilizar uma plataforma digital (site e aplicativo móvel) do Clube Terra para listar os produtos em promoção.<br><br>
+            2.2) Integração com Parceiros:<br>
+
+            Integrar a plataforma com os sistemas de estoque dos parceiros para sincronização automática dos produtos próximos ao vencimento.<br><br>
+            2.3) Geolocalização:<br>
+
+            Utilizar tecnologia de geolocalização para notificar os moradores e clientes próximos das lojas sobre as promoções.
+            <br><br><hr>
+            3. Marketing e Comunicação<br><hr>
+            3.1) Campanha Publicitária:<br>
+
+            Criar materiais de marketing (banners, posts em redes sociais, e-mails) para divulgar a campanha Desconto Sustentável.<br><br>
+            3.2) Notificações e Alertas:<br>
+
+            Enviar notificações push no aplicativo e e-mails para clientes cadastrados informando sobre os produtos em promoção.<br><br>
+            3.3) Parcerias com Influenciadores Locais:<br>
+
+            Colaborar com influenciadores e líderes comunitários para aumentar a visibilidade da campanha.
+            <br><br><hr>
+            4. Dinâmica de Venda<br><hr>
+            4.1) Identificação e Etiquetagem:<br>
+
+            Produtos próximos ao vencimento serão etiquetados com uma marca especial do Clube Terra indicando 50% de desconto.<br><br>
+            4.2) Seção Especial nas Lojas:<br>
+
+            Criar uma seção especial nas lojas parceiras onde esses produtos estarão disponíveis, facilitando o acesso dos clientes.<br><br>
+            4.3) Promoção Online:<br>
+
+            Oferecer a opção de compra online através do site ou aplicativo com retirada na loja ou entrega local.
+            <br><br><hr>
+            5. Incentivos e Benefícios<br><hr>
+            5.1) Benefícios para Parceiros:<br>
+
+            Redução de desperdício e perdas de inventário.
+            Publicidade positiva e aumento do tráfego de clientes.<br><br>
+            5.2) Benefícios para Clientes:<br>
+
+            Acesso a produtos com desconto significativo.
+            Contribuição para a sustentabilidade e redução do desperdício de alimentos.
+            <br><br><hr>
+            6. Monitoramento e Avaliação<br><hr>
+            6.1) Feedback dos Clientes:<br>
+
+            Coletar feedback dos clientes sobre a experiência de compra e sugestões para melhorias.<br><br>
+            6.2) Relatórios de Desempenho:<br>
+
+            Monitorar as vendas e o impacto da campanha nos estoques e no desperdício de alimentos.<br><br>
+            6.3) Ajustes e Melhoria Contínua:<br>
+            Ajustar a dinâmica da campanha com base no feedback e nos dados coletados para maximizar a eficácia.<br><hr>
+            Exemplo de Comunicação de Campanha<hr>
+            Assunto do E-mail:<br> 🌍"Desconto Sustentável: Produtos de Qualidade pela Metade do Preço!"
+            <hr>
+                <a href="#" data-toggle="modal" data-target="#infoModalemail">🌍 Modelo Carta/Email</a>
+                <br>
+                <a href="#" data-toggle="modal" data-target="#infoModalentrar">🌍 Participar/Entrar/Associar</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal DINÂMICA/IMPLEMENTAÇÃO/CARTA_EMAIL _ VENCIDINHOS-->
+<div class="modal fade" id="infoModalemail" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                🌍 Clube Terra apresenta: Desconto Sustentável! 🌍
+            <hr>
+            Querido(a) Parceiro(a) Clube Terra,
+            <br><br>
+            Você sabia que pode ajudar a reduzir o desperdício de alimentos e ainda economizar em suas compras?
+            <br>Conheça a nossa nova campanha Desconto Sustentável!
+            <br>Produtos alimentícios próximos ao vencimento agora estão com 50% de desconto nas lojas e supermercados parceiros do Clube🌍Terra.
+            <br><hr>
+            Como funciona:
+            <br><br>
+            🌍Visite a seção Desconto Sustentável em nossas lojas parceiras ou no nosso aplicativo.<br>
+            🌍Escolha os produtos etiquetados com a marca especial do Clube Terra.<br>
+            🌍Aproveite o desconto de 50% e leve seus produtos preferidos com qualidade dentro do prazo de validade para sua casa.<br><hr>
+            🌍Benefícios🌍:<br><br>
+            Economia em suas compras.
+            Contribua para a sustentabilidade e ajude a reduzir o desperdício de alimentos.<br>
+            Participe de uma iniciativa que beneficia toda a comunidade.<br>
+            Localize a loja mais próxima usando nosso aplicativo e receba notificações quando novos produtos entrarem em promoção.
+            <br><br>
+            Juntos, podemos fazer a diferença!
+            <br><br>
+            Atenciosamente,
+            <br><br><br>
+            Equipe Clube Terra 🌍
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal DINÂMICA/IMPLEMENTAÇÃO/ENTRAR_PARTICIPAR _ VENCIDINHOS-->
+<div class="modal fade" id="infoModalentrar" tabindex="-1" role="dialog" aria-labelledby="infoModalLabelV" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabelE">🌍ENTRAR Meu🌍Clube Terra🌍</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            Clube Terra 🌍<br><hr><br>
+            <p>Estamos em manutenção e ajustes para melhor atendê-los.......<br><br>
+            Parceiros Clube Terra,<br><br>
+            Aguardem........</p>
+            <hr>
+            <a href="#" data-toggle="modal" data-target="#infoModal">🌍 Cadastrar</a>
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIM MODAL VENCIDINHOS -->
+
+<!-- INICIO MODAL JOGO -->
+<!-- Modal PLANETQUEST  JOGO -->
+<div class="modal fade" id="infoModalPlanetquest" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabel">🌍 PlanetQuest 🌍 Missão Sustentável </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>PlanetQuest "Missão Sustentável"<br><br>
+            É um jogo educacional interativo que leva os jogadores em uma jornada épica para salvar o planeta Terra.
+            <br>O jogador assume o papel de um jovem ecologista que deve resolver diversos desafios relacionados à sustentabilidade e práticas ecológicas para avançar na sua aventura, aprender novas habilidades e restaurar o equilíbrio ambiental do planeta.</p>
+            <p>O jogo passa no planeta Terra e em um futuro próximo, onde a poluição e o desperdício de recursos ameaçam a sobrevivência dos ecossistemas.<br>
+            A narrativa envolve o jogador ajudando comunidades e ecossistemas a resolver problemas de poluição, reciclagem e reaproveitamento de recursos.
+            </p>
+            <p>Ensinando os conceitos básicos e fundamentos sobre reciclagem, reaproveitamento de alimentos, gerenciamento de resíduos e práticas sustentáveis.
+
+            <p>🌍"PlanetQuest: Missão Sustentável"<br>
+            <br>É uma experiência única que combina diversão, aprendizado com impacto social positivo.
+            <br><br>Junte-se a nós nessa missão e ajude a construir um futuro mais sustentável para todos!</p><hr>
+
+                <a href="#" data-toggle="modal" data-target="#infoModaljogo">Elementos🌍jogo</a> /
+                <a href="#" data-toggle="modal" data-target="#infoModalmissoes">Missões🌍Quests</a> /
+                <a href="#" data-toggle="modal" data-target="#infoModalreducao">Redução🌍Resíduos</a><br><hr>
+                <a href="#" data-toggle="modal" data-target="#infoModalmoedas">Moedas🌍Sust & Pontos</a> /
+                <a href="#" data-toggle="modal" data-target="#infoModaldesafio">Desafios🌍Nível</a><br>
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal ELEMENTOS-JOGO 1/5 -->
+<div class="modal fade" id="infoModaljogo" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>🌍PlanetQuest🌍:<hr><br> "Missão Sustentável" é um jogo educacional interativo que leva os jogadores em uma jornada épica para salvar o planeta Terra. O jogador assume o papel de um jovem ecologista que deve resolver diversos desafios relacionados à sustentabilidade e práticas ecológicas para avançar na sua aventura, aprender novas habilidades e restaurar o equilíbrio ambiental do planeta.</p>
+                <p>Desenvolvido em parceria com a ONU Meio Ambiente, o jogo é uma ferramenta educacional inovadora que visa conscientizar e engajar crianças e jovens sobre questões ambientais e promover ações sustentáveis em suas comunidades.</p>
+                <p>Disponível para download gratuito em dispositivos móveis e computadores, "PlanetQuest: Missão Sustentável" é uma experiência única que combina diversão, aprendizado e impacto social positivo. <br>Junte-se a nós nessa missão e ajude a construir um futuro mais sustentável para todos!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal MISSOES-JOGO 2/5 -->
+<div class="modal fade" id="infoModalmissoes" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>"MISSÕES🌍QUESTS"</p><hr>
+                🌍Reciclagem de Resíduos:<br><br> Ajudar a comunidade a reciclar materiais e reduzir a quantidade de lixo enviada para aterros sanitários.<br><hr>
+                🌍Reaproveitamento de Alimentos:<br><br> Colaborar com a distribuição de alimentos excedentes para famílias necessitadas evitando o desperdício de comida.<br><hr>
+                🌍Conservação da Natureza:<br><br> Proteger a fauna e flora local, restaurando habitats naturais e promovendo a biodiversidade.<br><hr>
+                🌍Energias Renováveis:<br><br> Implementar soluções sustentáveis de energia, como painéis solares e turbinas eólicas, para reduzir a dependência de combustíveis fósseis.<br><hr>
+                🌍Educação Ambiental:<br><br> Ensinar crianças e adultos sobre práticas sustentáveis e promova a conscientização sobre questões ambientais.<br><hr>
+                🌍Sustentabilidade Urbana:<br><br> Desenvolver projetos de infraestrutura verde e transporte sustentável para tornar as cidades mais ecológicas e habitáveis.<br><hr>
+                🌍Poluição e Desperdício Zero:<br><br> Prover estratégias para reduzir a poluição do ar, água e solo e Zerar o desperdício de alimentos.<br><hr>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal REDUCAO-JOGO 3/5 -->
+<div class="modal fade" id="infoModalreducao" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>🌍REDUÇÃO_RESÍDUOS🌍</p><hr>
+                🌍Redução de Resíduos:<br><br> Conceitos em reduzir, reutilizar e reciclar.<br><hr>
+                🌍Reciclagem:<br><br> Incentivar processos de separação de materiais recicláveis e não recicláveis.<br><hr>
+                🌍Compostagem:<br><br> Transformar resíduos orgânicos em adubo para plantas.<br><hr>
+                🌍Reaproveitamento:<br><br> Utilização de materiais descartados para criar novos produtos.<br><hr>
+                🌍Economia Circular:<br><br> Prover e Incentivar modelo de produção e consumo sustentável, visando minimizar o desperdício e maximizar a eficiência dos recursos.<br><hr>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal MOEDAS_SUST-JOGO 4/5 -->
+<div class="modal fade" id="infoModalmoedas" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>🌍"MOEDAS🌍SUST" X PONTOS:</p><hr>
+                🌍Moedas Sustentáveis:<br><br> São a moeda virtual do jogo que os jogadores ganham ao completar missões e desafios sustentáveis.<br><hr>
+                🌍Pontos de Experiência:<br><br> São os pontos que os jogadores acumulam ao avançar no jogo e completar tarefas.<br><hr>
+                🌍Recompensas e Benefícios:<br><br> Os jogadores podem trocar suas moedas sustentáveis por recompensas e benefícios exclusivos no jogo.<br><hr>
+                🌍Ranking e Competições:<br><br> Os jogadores podem competir com amigos e outros jogadores para subir no ranking e ganhar prêmios especiais.<br><hr>
+                🌍Desafios e Conquistas:<br><br> Os jogadores podem desafiar-se a completar missões difíceis e conquistar troféus e medalhas especiais.<br><hr>
+                🌍Personalização e Upgrades:<br><br> Os jogadores podem personalizar seus personagens e adquirir upgrades para melhorar suas habilidades e desempenho no jogo.<br><hr>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal DESAFIOS_NIVEL-JOGO 5/5-->
+<div class="modal fade" id="infoModaldesafio" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>🌍"OBJETIVOS E MISSÕES DO JOGO"🌍:</p><hr>
+                🌍Desafios de Sustentabilidade:<br><br> Os jogadores enfrentam desafios diários e semanais relacionados à sustentabilidade e práticas ecológicas.<br><hr>
+                🌍Níveis e Missões:<br><br> Os jogadores avançam no jogo completando missões e desafios em diferentes níveis de dificuldade.<br><hr>
+                🌍Quests e Objetivos:<br><br> Os jogadores têm objetivos específicos a cumprir em cada missão para progredir na história e ganhar recompensas.<br><hr>
+                🌍Inovação e Criatividade:<br><br> Os jogadores são incentivados a encontrar soluções criativas e inovadoras para os problemas ambientais apresentados no jogo.<br><hr>
+                🌍Colaboração e Comunidade:<br><br> Os jogadores podem colaborar com outros jogadores e formar comunidades para resolver desafios em conjunto.<br><hr>
+                🌍Aprendizado e Conscientização:<br><br> Os jogadores aprendem conceitos e práticas sustentáveis enquanto se divertem e se envolvem na narrativa do jogo.<br><hr>
+
+                <a href="#" data-toggle="modal" data-target="#infoModaldesafionivel">🌍 Desafio X Nível...🌍</a><br>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal DESAFIOS_NIVEL-JOGO -->
+<div class="modal fade" id="infoModaldesafionivel" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>🌍 "FASES/NÍVEIS" DETALHADOS 🌍</p><hr>
+                🌍Nível 1: Floresta das Soluções:<br><hr>
+                Objetivo: Aprender a identificar e separar resíduos recicláveis e não recicláveis.<br><br>
+                Desafio: Ajudar os habitantes da floresta a limpar e separar os resíduos corretamente.<br><br>
+                Recompensa: Moedas sustentáveis e pontos de experiência.<br><hr>
+                Missão:<br><br> Reciclar 10 itens diferentes e ganhar o distintivo de Reciclador Sustentável.<br>
+                <br><hr>
+                🌍Nível 2: Cidade Sustentável:<br><hr>
+                Objetivo: Promover a reciclagem e o reaproveitamento de materiais na cidade.<br><br>
+                Desafio: Organizar uma campanha de coleta seletiva e reciclagem na comunidade.<br><br>
+                Recompensa: Moedas sustentáveis e pontos de experiência.<br><hr>
+                Missão:<br><br> Recolher 100 kg de materiais recicláveis e ganhar o título de Guardião da Cidade.<br>
+                <br><hr>
+                🌍Nível 3: Oásis Ecológico:<br><hr>
+                Objetivo: Restaurar um ecossistema danificado e proteger a biodiversidade local.<br><br>
+                Desafio: Plantar árvores nativas e criar habitats para animais ameaçados.<br><br>
+                Recompensa: Moedas sustentáveis e pontos de experiência.<br><hr>
+                Missão:<br><br> Restaurar 5 hectares de floresta e ganhar o prêmio de Protetor da Natureza.<br>
+                <br><hr>
+                🌍Nível 4: Energia Limpa:<br><hr>
+                Objetivo: Implementar soluções de energia renovável e reduzir a pegada de carbono.<br><br>
+                Desafio: Instalar painéis solares e turbinas eólicas para abastecer a comunidade.<br><br>
+                Recompensa: Moedas sustentáveis e pontos de experiência.<br><hr>
+                Missão:<br><br> Alcançar a autossuficiência energética e ganhar o título de Mestre da Energia.<br>
+                <br><hr>
+                🌍Nível 5: Futuro Sustentável:<br><hr>
+                Objetivo: Educar e inspirar a próxima geração de líderes sustentáveis.<br><br>
+                Desafio: Criar um programa de educação ambiental para escolas e comunidades.<br><br>
+                Recompensa: Moedas sustentáveis e pontos de experiência.<br><hr>
+                Missão:<br><br> Formar 10 grupos de jovens ambientalistas e ganhar o prêmio de Mentor Sustentável.<br>
+                <br><hr>
+                🌍Nível 6: Planeta em Equilíbrio:<br><hr>
+                Objetivo: Restaurar o equilíbrio ambiental e promover a harmonia entre humanos e natureza.<br><br>
+                Desafio: Realizar uma conferência global sobre sustentabilidade e mudanças climáticas.<br><br>
+                Recompensa: Moedas sustentáveis e pontos de experiência.<br><hr>
+                Missão:<br><br> Convencer líderes mundiais a adotar políticas sustentáveis e ganhar o título de Embaixador da Terra.<br>
+                <br><hr>
+
+                <a href="#" data-toggle="modal" data-target="#infoModalmissaofinal">🌍 Missão Final 🌍</a><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal MISSAO_FINAL-JOGO -->
+<div class="modal fade" id="infoModalmissaofinal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>"🌍 MISSÃO FINAL 🌍"</p><hr>
+                <p>O parceiro jogador para se tornar um Guardião da Terra, deverá ser capaz de resolver qualquer problema ambiental, e derrota Poluente restaurando o equilíbrio ambiental do planeta.<br><hr>
+                Missão Final:<br><br>
+                <p>Uma série de desafios que utilizam todos os conhecimentos adquiridos, culminando em uma batalha épica contra Poluente e suas forças poluentes.<br><hr>
+                Objetivo:<br><br>
+                <p>Derrotar Poluente e restaurar o equilíbrio ambiental do planeta Terra.<br><hr>
+                Recompensa:<br><br>
+                <p>Título de Guardião da Terra, Moedas Sustentáveis e Pontos de Experiência.<br><hr>
+                <p>"PlanetQuest: Missão Sustentável" promete ser uma experiência educativa e divertida que introduz os jogadores aos fundamentos
+                da sustentabilidade e práticas ecológicas de maneira envolvente e interativa. Se você tiver mais ideias ou modificações, estamos aqui para ajudar....🌍
+                </p><br><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar 🌍</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIM MODAL VENCIDINHOS -->

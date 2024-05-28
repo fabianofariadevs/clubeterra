@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Automatizado - Clube Terra</title>
+
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.screen {
+    width: 300px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.compartments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.compartment {
+    width: 150px;
+    height: 150px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.plastico {
+    background-color: #f44336;
+    color: white;
+}
+
+.papel {
+    background-color: #2196F3;
+    color: white;
+}
+
+.metal {
+    background-color: #FFC107;
+    color: white;
+}
+
+.vidro {
+    background-color: #4CAF50;
+    color: white;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+</style>
+<script>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.screen {
+    width: 300px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.compartments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.compartment {
+    width: 150px;
+    height: 150px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.plastico {
+    background-color: #f44336;
+    color: white;
+}
+
+.papel {
+    background-color: #2196F3;
+    color: white;
+}
+
+.metal {
+    background-color: #FFC107;
+    color: white;
+}
+
+.vidro {
+    background-color: #4CAF50;
+    color: white;
+}
+
+</script>
+<body>
+    <header>
+        <h1>Container Automatizado - Clube Terra</h1>
+        <p>(Demonstração tela Token, ref.: Containers para recebimento reciclavéis)</p>
+    </header>
+
+    <main>
+        <section id="container-section">
+            <div class="container">
+                <div class="screen">
+                    <h2>Bem-vindo ao Container Sustentável</h2>
+                    <div id="step-1" class="step active">
+                        <p>1. Escaneie seu QR code ou insira seu cartão RFID para identificação.</p>
+                        <input type="text" id="user-id" placeholder="ID do Usuário" />
+                        <button onclick="nextStep()">Próximo</button>
+                    </div>
+                    <div id="step-2" class="step">
+                        <p>2. Selecione o tipo de lixo reciclável que você está depositando:</p>
+                        <select id="recyclable-type">
+                            <option value="plastico">Plástico</option>
+                            <option value="papel">Papel</option>
+                            <option value="metal">Metal</option>
+                            <option value="vidro">Vidro</option>
+                        </select>
+                        <button onclick="nextStep()">Próximo</button>
+                    </div>
+                    <div id="step-3" class="step">
+                        <p>3. Deposite seu material reciclável no compartimento indicado.</p>
+                        <button onclick="finishProcess()">Finalizar</button>
+                    </div>
+                    <div id="step-4" class="step">
+                        <p>Obrigado por reciclar! Seu cashback foi creditado.</p>
+                        <p>Saldo atual em Moedas Sust: <span id="cashback"></span></p>
+                    </div>
+                </div>
+                <div class="compartments">
+                    <div class="compartment plastico">Plástico</div>
+                    <div class="compartment papel">Papel</div>
+                    <div class="compartment metal">Metal</div>
+                    <div class="compartment vidro">Vidro</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Clube🌍Terra. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
